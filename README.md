@@ -41,12 +41,11 @@ I expanded my To-Do List application and a Recipe Finder web app. It applies mod
 - At first, my linter flagged several formatting issues and unused variables. Going through them one by one helped me understand why clean syntax matters.
 -  While advancing the To-Do list, I ran into console errors where JavaScript tried to access HTML elements or update items before they were properly rendered on the page. Debugging fixed the issue.
 
-## Collaboration (required in Weeks 0, 3 and 7; omit on other solo weeks)
+## Collaboration 
 - **Team / partner:** [@partner](https://github.com/partner) — found on the Classroom board
 - **PR I opened:** https://github.com/Caroline-wanjira/iyf-s12-week-07-Caroline-wanjira/pull/1
 - **PR I reviewed:** https://github.com/.../pull/N
-- **Review I wrote** (Week 7 — link one of your inline comments): https://github.com/.../pull/N#discussion_rNNNNN
-- **Nobody turned up?** Say so here and name them. Your own half is still marked.
+- **Review I wrote** (Week 7 — link one of your inline comments): https://github.com/.../pull/N#discussion_rNNNN
 
 ## Screenshot
 ![Kitchen Companion](kitchen-companion-screenshot.jpeg)
