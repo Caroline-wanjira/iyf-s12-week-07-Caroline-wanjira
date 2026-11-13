@@ -24,7 +24,7 @@ form.addEventListener("submit", (event) => {
 
 todoList.addEventListener("click", (event) => {
     const li = event.target.closest("li");
-    if (!li) return;
+    if (!li) {return;}
     const todoId = Number(li.dataset.id);
 
     if (event.target.classList.contains("delete-btn")) {
@@ -36,7 +36,7 @@ todoList.addEventListener("click", (event) => {
 
 // Double-click to edit
 todoList.addEventListener("dblclick", (event) => {
-    if (!event.target.classList.contains("todo-text")) return;
+    if (!event.target.classList.contains("todo-text")) {return;}
 
     const span = event.target;
     const todoId = Number(span.closest("li").dataset.id);

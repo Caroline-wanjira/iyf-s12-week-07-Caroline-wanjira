@@ -59,7 +59,7 @@ export function startEditing(span, onSave, onCancel) {
 
     let finished = false;
     function finish(shouldSave) {
-        if (finished) return;
+        if (finished) {return;}
         finished = true;
         if (shouldSave) {
             onSave(editInput.value);
@@ -69,8 +69,8 @@ export function startEditing(span, onSave, onCancel) {
     }
 
     editInput.addEventListener("keydown", (e) => {
-        if (e.key === "Enter") finish(true);
-        else if (e.key === "Escape") finish(false);
+        if (e.key === "Enter") {finish(true);}
+        else if (e.key === "Escape") {finish(false);}
     });
     editInput.addEventListener("blur", () => finish(true));
 }

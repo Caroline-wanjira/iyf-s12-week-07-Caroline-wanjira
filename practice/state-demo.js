@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // Simple state management pattern
 const state = {
     todos: [],

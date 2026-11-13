@@ -4,7 +4,7 @@ const input = document.getElementById("note-input");
 const addBtn = document.getElementById("add-btn");
 const list = document.getElementById("note-list");
 
-let notes = getFromStorage("notes", []);
+const notes = getFromStorage("notes", []);
 
 function render() {
     list.innerHTML = "";
@@ -25,7 +25,7 @@ function render() {
 
 addBtn.addEventListener("click", () => {
     const text = input.value.trim();
-    if (!text) return;
+    if (!text) {return;}
     notes.push(text);
     saveToStorage("notes", notes);
     input.value = "";

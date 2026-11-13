@@ -14,9 +14,11 @@ console.log("Step 1");
 console.log("Step 2");
 console.groupEnd();
 
-console.time("loop");
-for (let i = 0; i < 100000; i++) {}
-console.timeEnd("loop");
+let sum = 0;
+for (let i = 0; i < 100000; i++) {
+    sum += i;
+}
+console.log(sum);
 
 const x = -5;
 console.assert(x > 0, "x should be positive");
