@@ -42,10 +42,8 @@ I expanded my To-Do List application and a Recipe Finder web app. It applies mod
 -  While advancing the To-Do list, I ran into console errors where JavaScript tried to access HTML elements or update items before they were properly rendered on the page. Debugging fixed the issue.
 
 ## Collaboration 
-- **Team / partner:** [@partner](https://github.com/partner) — found on the Classroom board
 - **PR I opened:** https://github.com/Caroline-wanjira/iyf-s12-week-07-Caroline-wanjira/pull/1
-- **PR I reviewed:** https://github.com/.../pull/N
-- **Review I wrote** (Week 7 — link one of your inline comments): https://github.com/.../pull/N#discussion_rNNNN
+
 
 ## Screenshot
 ![Kitchen Companion](kitchen-companion-screenshot.jpeg)
