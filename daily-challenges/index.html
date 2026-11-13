@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen Companion</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Kitchen Companion</h1>
+        <button id="theme-toggle" type="button">Switch Kitchen Mode</button>
+    </header>
+
+    <main>
+    
+        <section>
+            <h2>Find a Recipe or Ingredient</h2>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search dishes (e.g., Pilau, Chapati, Garlic Chicken)...">
+                <ul id="history-dropdown"></ul>
+            </div>
+            <p id="active-search-display" class="status-text">Press Enter to search and save to recent history.</p>
+        </section>
+
+
+        <section>
+            <h2>Custom Recipe & Meal Prep Notes</h2>
+            <form id="auto-save-form">
+                <div class="form-group">
+                    <label for="recipe-title">Dish Name</label>
+                    <input type="text" id="recipe-title" name="recipeTitle" placeholder="e.g., Spicy Coconut Curry">
+                </div>
+
+                <div class="form-group">
+                    <label for="meal-category">Meal Category</label>
+                    <select id="meal-category" name="mealCategory">
+                        <option value="breakfast">Breakfast</option>
+                        <option value="lunch">Lunch</option>
+                        <option value="dinner">Dinner</option>
+                        <option value="dessert">Dessert / Snack</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="recipe-notes">Ingredients</label>
+                    <textarea id="recipe-notes" name="recipeNotes" rows="4" placeholder="Write ingredient substitutions or cooking times..."></textarea>
+                </div>
+
+                <button type="submit">Save Final Recipe</button>
+                <p id="autosave-status" class="status-text">Drafts auto-save every 5 seconds.</p>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
