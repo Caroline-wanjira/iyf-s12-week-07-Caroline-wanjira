@@ -24,7 +24,6 @@ h1 {
     text-align: center;
 }
 
-
 #todo-form {
     display: flex;
     gap: 10px;
@@ -59,9 +58,6 @@ h1 {
 #todo-form button:hover {
     background-color: #078d4f;
 }
-
-
-
 
 #todo-list {
     list-style: none;

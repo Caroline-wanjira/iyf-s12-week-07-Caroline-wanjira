@@ -1,6 +1,6 @@
 const users = [
-  { name: "Amina", age: 21 },
-  { name: "Brian", age: 17 },
+    { name: "Amina", age: 21 },
+    { name: "Brian", age: 17 },
 ];
 
 console.log("Basic message");
