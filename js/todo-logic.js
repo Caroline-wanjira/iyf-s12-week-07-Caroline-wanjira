@@ -1,3 +1,9 @@
+export const FILTER = {
+  ALL: "all",
+  ACTIVE: "active",
+  COMPLETED: "completed",
+};
+
 export function addTodo(todos, text) {
   const trimmedText = text.trim();
   if (!trimmedText) return todos;

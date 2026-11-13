@@ -1,5 +1,6 @@
 import { getFromStorage, saveToStorage } from "./storage.js";
 import * as logic from "./todo-logic.js";
+const {FILTER} = logic;
 
 const STORAGE_KEY = "todos";
 const FILTER_KEY = "filter";
