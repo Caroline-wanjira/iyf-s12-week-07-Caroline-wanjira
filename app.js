@@ -1,3 +1,4 @@
+import {saveToStorage, getFromStorage} from "./js/storage.js";
 // DOM Elements
 const form = document.getElementById("todo-form");
 const input = document.getElementById("todo-input");
@@ -7,8 +8,9 @@ const filters = document.querySelectorAll(".filter");
 const clearCompletedBtn = document.getElementById("clear-completed");
 
 // State
-let todos = [];
-let currentFilter = "all";
+const STORAGE_KEY = "todos";
+let todos = getFromStorage(STORAGE_KEY) || [];
+let currentFilter = getFromStorage("filter", "all");
 
 // Functions
 function createTodoElement(todo) {
@@ -68,6 +70,7 @@ function addTodo(text) {
     };
 
     todos.push(newTodo);
+    saveToStorage(STORAGE_KEY, todos);
     renderTodos();
 }
 
@@ -78,11 +81,13 @@ function toggleTodo(id) {
         }
         return todo;
     });
+    saveToStorage(STORAGE_KEY, todos);
     renderTodos();
 }
 
 function deleteTodo(id) {
     todos = todos.filter((todo) => todo.id !== id);
+    saveToStorage(STORAGE_KEY, todos);
     renderTodos();
 }
 
@@ -111,6 +116,7 @@ function filterTodos(filter) {
     filters.forEach((btn) => {
         btn.classList.toggle("active", btn.dataset.filter === filter);
     });
+    saveToStorage("filter", currentFilter);
     renderTodos();
 }
 
@@ -172,7 +178,6 @@ filters.forEach((btn) => {
 
 // Clear Completed button handler
 clearCompletedBtn.addEventListener("click", () => {
-    todos = todos.filter((todo) => !todo.completed);
     renderTodos();
 });
 
