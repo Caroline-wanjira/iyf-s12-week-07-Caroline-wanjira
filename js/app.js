@@ -1,4 +1,4 @@
-import {saveToStorage, getFromStorage} from "./js/storage.js";
+import {saveToStorage, getFromStorage} from "./storage.js";
 // DOM Elements
 const form = document.getElementById("todo-form");
 const input = document.getElementById("todo-input");
